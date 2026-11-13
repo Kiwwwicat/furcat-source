@@ -1,0 +1,53 @@
+# 빌드 산출물
+build/
+dist/
+out/
+*.exe
+*.zip
+*.spec.bak
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+_jpn_*.spec
+
+# 릴리스 / 작업용 원본 자산
+릴리스/
+지난버전/
+털캣털캣-v*/
+ファーキャットファーキャット-v*/
+*.aep
+*.mp4
+
+# IDE/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude / 내부 노트
+.claude/
+CLAUDE.md
+WORK_LOG.md
+.claude-inbox.log
+
+# 환경/설정
+.env
+.env.*
+*.local
+credentials.json
+secrets.json
+service-account*.json
+firebase*.json
+config.json
+*.pem
+*.key
+id_rsa*
+.npmrc
+.pypirc
+
+# 로그/임시
+*.log
+*.tmp
+nul

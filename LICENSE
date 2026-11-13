@@ -1,0 +1,29 @@
+Copyright (c) 2026 kiwwwicat. All Rights Reserved.
+
+The source code, images and icons in this repository (excluding the
+third-party components listed below) may not be copied, modified, or
+redistributed without explicit written permission from the copyright holder.
+
+This repository is published so that the code can be read and bug fixes can
+be proposed. Viewing and forking within GitHub are permitted as described in
+the GitHub Terms of Service. By submitting a pull request, you agree that the
+copyright holder may incorporate your changes into this software and
+distribute them.
+
+Third-party components keep their own licenses:
+- Galmuri11, Galmuri11-Bold, Galmuri11Bitmap, Galmuri11Bitmap-Bold
+  (c) 2019-2025 Lee Minseo, SIL Open Font License 1.1 (see Galmuri-OFL.txt)
+- PySide6 / shiboken6 (not included in this repository; installed via pip)
+  LGPL-3.0 (see LGPL-3.0.txt and GPL-3.0.txt)
+
+---
+
+본 저장소의 코드, 이미지, 아이콘(아래 외부 구성 요소 제외)은 저작자의 서면 허락
+없이 복제, 수정, 재배포할 수 없습니다. GitHub 이용약관에 따른 열람과 fork는
+허용되며, Pull Request를 보내면 저작자가 그 수정 내용을 이 소프트웨어에 반영해
+배포하는 데 동의하는 것으로 봅니다.
+
+本リポジトリのコード・画像・アイコン(下記の外部コンポーネントを除く)を、
+著作者の書面による許可なく複製・改変・再配布することを禁じます。GitHub 利用規約に
+基づく閲覧と fork は可能です。Pull Request を送ると、著作者がその修正を本ソフト
+ウェアに反映し配布することに同意したものとみなします。
