@@ -3,6 +3,7 @@
 데스크톱에 PNG 캐릭터를 띄우고, 클릭/드래그로 쓰다듬으면 털 입자가 흩어져 화면에 묻는 Windows 데스크톱 펫 앱의 소스 코드입니다.
 
 이 저장소는 **코드 열람과 버그 수정 제안**을 위해 공개합니다. 실행 파일(exe)과 배포용 zip은 포함하지 않습니다.
+개인적으로 고쳐 쓰는 것은 괜찮지만, 원본이나 수정본을 다른 사람에게 배포하는 것은 금지합니다 (아래 "라이선스").
 
 현재 버전: v1.2.8
 
@@ -70,13 +71,19 @@ PySide6(LGPL-3.0)의 라이브러리 교체 가능 의무를 지키기 위해 on
 ## 라이선스
 
 이 저장소의 코드와 캐릭터 이미지(`1.png`, `2.png`, `3.png`, 아이콘)는 © 2026 kiwwwicat. **All Rights Reserved.**
-배포 중인 exe와 같은 라이선스이며, 저작자의 서면 허락 없이 복제, 수정, 재배포할 수 없습니다. 자세한 내용은 `LICENSE`를 보세요.
-GitHub 이용약관에 따라 GitHub 안에서 열람과 fork는 가능하며, 수정 제안은 위 "오류 제보 / 수정 제안" 방식으로 받습니다.
+
+- **허용:** 코드 열람, 개인적으로 사용하기 위한 수정과 빌드, GitHub 안에서의 fork, Issue / Pull Request로 수정 제안
+- **금지:** 원본이나 수정본(소스 코드, 빌드한 exe)을 다른 사람에게 배포, 업로드, 판매
+
+자세한 내용은 `LICENSE`를 보세요. 외부 구성 요소는 각자의 라이선스를 따르며, 위 조건은 그 라이선스가 주는 권리(예: PySide6/Qt 라이브러리 교체)를 제한하지 않습니다.
 
 포함된 외부 구성 요소:
 
-- **PySide6 / shiboken6** (LGPL-3.0): 저장소에는 포함하지 않고 `pip`로 설치합니다. 빌드 결과물에 동봉할 라이선스 전문은 `LGPL-3.0.txt`, `GPL-3.0.txt` (LGPL-3.0은 GPL-3.0에 추가 권한을 더한 형식).
+- **PySide6 / shiboken6 / Qt** (LGPL-3.0): 저장소에는 포함하지 않고 `pip`로 설치합니다. 빌드 결과물에 동봉할 라이선스 전문은 `LGPL-3.0.txt`, `GPL-3.0.txt` (LGPL-3.0은 GPL-3.0에 추가 권한을 더한 형식). 배포본에 쓴 버전의 소스: [PySide6 6.10.1](https://download.qt.io/official_releases/QtForPython/pyside6/PySide6-6.10.1-src/), [Qt 6.10.1](https://download.qt.io/official_releases/qt/6.10/6.10.1/).
+- **Python** (PSF License)과 Windows용 Python에 함께 들어 있는 OpenSSL, libffi, bzip2 등: 빌드 결과물에 `Python-LICENSE.txt`를 동봉합니다.
 - **Galmuri11 / Galmuri11-Bold / Galmuri11Bitmap** © 2019-2025 Lee Minseo, SIL Open Font License 1.1 (`Galmuri-OFL.txt`).
+
+빌드할 때 spec 파일이 Qt Virtual Keyboard 관련 DLL을 뺍니다. 이 모듈은 LGPL이 아닌 GPL-3.0 전용이라, 비공개 코드와 함께 배포하면 안 되기 때문입니다 (앱에서 쓰지 않음).
 
 ## Special Thanks
 

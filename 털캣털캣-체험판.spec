@@ -45,6 +45,14 @@ a = Analysis(
     noarchive=False,
     optimize=0,
 )
+# Qt Virtual Keyboard는 GPL-3.0/상용 전용(LGPL 아님)이고 앱에서 쓰지 않는다.
+# PySide6 훅이 platforminputcontexts 플러그인으로 끌어오므로, 그 플러그인과
+# 그것만 의존하는 Qml/Quick 계열 DLL을 빼서 비공개 코드와 GPL 전용 모듈이 섞이지 않게 한다.
+import os
+_DROP = {'qtvirtualkeyboardplugin.dll', 'qt6virtualkeyboard.dll', 'qt6quick.dll',
+         'qt6qml.dll', 'qt6qmlmodels.dll', 'qt6qmlmeta.dll', 'qt6qmlworkerscript.dll'}
+a.binaries = [b for b in a.binaries if os.path.basename(b[0]).lower() not in _DROP]
+
 pyz = PYZ(a.pure)
 
 # onedir 빌드: PySide6(LGPL-3.0) 의무 §4d "사용자가 라이브러리 교체 가능"

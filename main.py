@@ -183,6 +183,10 @@ TR = {
                         'JPN': 'このプログラムはAIの助けを借りて制作されました。',
                         'ENG': 'This program was made with help from AI.'},
     'credits_fonts':   {'KOR': '사용 폰트', 'JPN': '使用フォント', 'ENG': 'Fonts used'},
+    'credits_libs':    {'KOR': '사용 라이브러리', 'JPN': '使用ライブラリ', 'ENG': 'Libraries used'},
+    'credits_license_files': {'KOR': '라이선스 전문: 프로그램 폴더의 txt 파일',
+                              'JPN': 'ライセンス全文: プログラムフォルダの txt ファイル',
+                              'ENG': 'Full license texts: txt files in the program folder'},
 
     # 언어 다이얼로그
     'lang_dialog_title': {'KOR': '언어 선택', 'JPN': '言語選択', 'ENG': 'Language'},
@@ -2149,6 +2153,15 @@ class CreditsDialog(QDialog):
             ('Galmuri11 / Galmuri11-Bold', 11, False),
             ('© 2019-2025 Lee Minseo', 11, False),
             ('SIL Open Font License 1.1', 11, False),
+            (None, None, None),
+            # LGPL-3.0 §4(c): 실행 중 저작권 표시를 보여주면 Qt 표시 + 라이선스 안내도 함께
+            (t('credits_libs'), 11, True),
+            ('Qt for Python (PySide6) / Qt', 11, False),
+            ('© The Qt Company Ltd. and other contributors', 11, False),
+            ('LGPL-3.0 (LGPL-3.0.txt, GPL-3.0.txt)', 11, False),
+            ('Python © Python Software Foundation', 11, False),
+            ('PSF License (Python-LICENSE.txt)', 11, False),
+            (t('credits_license_files'), 11, False),
             (None, None, None),
             ('Contact', 11, True),
             ('Twitter(X): @kiwwwicat', 11, False),

@@ -1,29 +1,49 @@
 Copyright (c) 2026 kiwwwicat. All Rights Reserved.
 
 The source code, images and icons in this repository (excluding the
-third-party components listed below) may not be copied, modified, or
-redistributed without explicit written permission from the copyright holder.
+third-party components listed below) are provided under these terms:
 
-This repository is published so that the code can be read and bug fixes can
-be proposed. Viewing and forking within GitHub are permitted as described in
-the GitHub Terms of Service. By submitting a pull request, you agree that the
-copyright holder may incorporate your changes into this software and
-distribute them.
+Permitted
+- Reading the code, and modifying and building it for your own personal use.
+- Forking within GitHub as described in the GitHub Terms of Service, and
+  proposing fixes to this repository through issues and pull requests.
 
-Third-party components keep their own licenses:
+Not permitted
+- Distributing, uploading, or selling the original or a modified version
+  (source code or built executables) to others outside of the above.
+
+By submitting a pull request, you agree that the copyright holder may
+incorporate your changes into this software and distribute them.
+
+Third-party components keep their own licenses, and nothing here restricts
+the rights they grant (for example, replacing the LGPL-licensed PySide6/Qt
+libraries, or reverse engineering for that purpose):
 - Galmuri11, Galmuri11-Bold, Galmuri11Bitmap, Galmuri11Bitmap-Bold
   (c) 2019-2025 Lee Minseo, SIL Open Font License 1.1 (see Galmuri-OFL.txt)
-- PySide6 / shiboken6 (not included in this repository; installed via pip)
+- PySide6 / shiboken6 / Qt (not included in this repository; installed via pip)
   LGPL-3.0 (see LGPL-3.0.txt and GPL-3.0.txt)
+- Python and the components bundled with its Windows build (see Python-LICENSE.txt)
 
 ---
 
-본 저장소의 코드, 이미지, 아이콘(아래 외부 구성 요소 제외)은 저작자의 서면 허락
-없이 복제, 수정, 재배포할 수 없습니다. GitHub 이용약관에 따른 열람과 fork는
-허용되며, Pull Request를 보내면 저작자가 그 수정 내용을 이 소프트웨어에 반영해
-배포하는 데 동의하는 것으로 봅니다.
+[한국어]
+본 저장소의 코드, 이미지, 아이콘(아래 외부 구성 요소 제외)에 대해:
+- 허용: 코드 열람, 개인적으로 사용하기 위한 수정과 빌드, GitHub 이용약관에 따른
+  fork, Issue와 Pull Request로 이 저장소에 수정 제안
+- 금지: 원본이나 수정본(소스 코드, 빌드한 실행 파일)을 다른 사람에게 배포,
+  업로드, 판매하는 것
+Pull Request를 보내면 저작자가 그 수정 내용을 이 소프트웨어에 반영해 배포하는 데
+동의하는 것으로 봅니다. 외부 구성 요소는 각자의 라이선스를 따르며, 이 조건은
+그 라이선스가 주는 권리(예: LGPL PySide6/Qt 라이브러리 교체와 그를 위한 분석)를
+제한하지 않습니다.
 
-本リポジトリのコード・画像・アイコン(下記の外部コンポーネントを除く)を、
-著作者の書面による許可なく複製・改変・再配布することを禁じます。GitHub 利用規約に
-基づく閲覧と fork は可能です。Pull Request を送ると、著作者がその修正を本ソフト
-ウェアに反映し配布することに同意したものとみなします。
+[日本語]
+本リポジトリのコード・画像・アイコン(下記の外部コンポーネントを除く)について:
+- 許可: コードの閲覧、個人で使うための改変とビルド、GitHub 利用規約に基づく fork、
+  Issue と Pull Request による本リポジトリへの修正提案
+- 禁止: オリジナルまたは改変版(ソースコード、ビルドした実行ファイル)を他の人に
+  配布・アップロード・販売すること
+Pull Request を送ると、著作者がその修正を本ソフトウェアに反映し配布することに
+同意したものとみなします。外部コンポーネントはそれぞれのライセンスに従い、
+本条件はそのライセンスが与える権利(例: LGPL の PySide6/Qt ライブラリの差し替えと
+そのための解析)を制限しません。
